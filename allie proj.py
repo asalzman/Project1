@@ -23,7 +23,7 @@ for i in df:
         print (count)
     count = count + 1
 
-listofword = [(x, dictionary[x]) for x in dictionary.keys()]
+listofwords = [(x, dictionary[x]) for x in dictionary.keys()]
 # not sure if x is the right thing to use in ^
 #listofwords = [(list(dictionary.keys())[i], list(dictionary.values())[i]) for i in range(len(dictionary.keys()))]
 
@@ -31,5 +31,4 @@ sortedlist = sorted(listofwords, key=lambda tup: tup[1], reverse=True)
 
 for i in range(5):
     word = sortedlist[i]
-    print(word[0] + str(word[1])
-          
+    print(word[0] + ": " + str(word[1]))
